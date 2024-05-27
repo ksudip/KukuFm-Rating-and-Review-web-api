@@ -1,0 +1,133 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  color: #333;
+}
+
+p{
+  /* width: 250px; */
+  font-size: 8pt;
+  /* white-space: nowrap; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+input, textarea {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.NavBar {
+  display: flex;
+  /* border: solid, 2px red; */
+  height: 4rem;
+  width: 95vw;
+  justify-content: space-between ;
+  background-color: rgb(238, 133, 88);
+}
+
+.nav {
+  display: flex;
+  flex-wrap: nowrap !important;
+  margin-top: 10px;
+  gap: 10px;
+}
+.navbarleft{
+  margin-left: 10px;
+}
+.navbarright{
+  margin-right: 10px;
+}
+input {
+  height: 25px;
+  border-radius: 5px;
+  width: 150px;
+}
+
+.AudioDetails{
+  /* border: solid 2px black; */
+  align-items: center;
+  width: 40%;
+  height: 100%;
+  margin: 20px auto 0 auto;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: antiquewhite;
+}
+
+.DetailImage{
+  height: 10%;
+  width: 50%;
+  border-radius: 5px;
+}
+
+.read_review, .add_review {
+  border-radius: 4px;
+  margin: 6px;
+}
+
+
+.login, .signUp {
+  border: solid 2px black;
+  text-align: center;
+  height: 50vh;
+  width: 30vw;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+  /* margin: auto auto 0 auto; */
+
+}
+
+.toggle {
+  width: 20rem;
+  height: 500px !important;
+  margin-top: 30px;
+}
+
+
+@media only screen and (max-width: 1250px) {
+  .NavBar {
+    background-color: rgb(21, 21, 21);
+    border: solid, 2px black;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .AudioList_ul {
+    background-color: rgb(21, 21, 21);
+    /* border: solid, 2px black; */
+  }
+}
+
+
+
+
