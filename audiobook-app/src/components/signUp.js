@@ -12,7 +12,7 @@ const SignUp = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/register', { name, email, password, avatar });
+      const res = await axios.post('https://kukufm-rating-and-review-web-api.onrender.com/api/auth/register', { name, email, password, avatar });
       localStorage.setItem('token', res.data.token);
       navigate("/")
     } catch (err) {

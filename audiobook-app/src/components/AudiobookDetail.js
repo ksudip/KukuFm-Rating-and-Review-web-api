@@ -27,7 +27,7 @@ function AudiobookDetail() {
       try {
         // let url=process.env.BASE_URL
         const { data } = await axios.get(
-          `http://localhost:5000/audiobooks/${id}`
+          `https://kukufm-rating-and-review-web-api.onrender.com/audiobooks/${id}`
         );
         console.log("RESPONSE", data);
         setAudiobook(data);

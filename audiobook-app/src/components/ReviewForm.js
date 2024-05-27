@@ -10,7 +10,7 @@ function ReviewForm({ audiobookId }) {
     e.preventDefault();
 
     const review = { user, rating: Number(rating), comment };
-    axios.post(`http://localhost:5000/audiobooks/${audiobookId}/reviews`, review)
+    axios.post(`https://kukufm-rating-and-review-web-api.onrender.com/audiobooks/${audiobookId}/reviews`, review)
       .then(response => {
         console.log('Review submitted', response.data);
       })

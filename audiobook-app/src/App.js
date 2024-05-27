@@ -20,7 +20,7 @@ function App() {
   useEffect(() => {
     (async()=>{
       try {
-        const {data} = await axios.get('http://localhost:5000/audiobooks')
+        const {data} = await axios.get('https://kukufm-rating-and-review-web-api.onrender.com/audiobooks')
         let List = new Set([]);
         for(let x in data){
           List.add(data[x].author);
